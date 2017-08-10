@@ -2,7 +2,7 @@
 
 ## How to try
 
-If you have a [VCCW](http://vccw.cc/) based environment it is easy to try.
+If you have a [VCCW](http://vccw.cc/) based environment, it is easy to try.
 
 But if you don't have it, please see [customizing](#customizing) section.
 
@@ -15,7 +15,7 @@ $ composer install
 $ npm install
 ```
 
-Finally run behat tests.
+Finally, run behat tests.
 
 ```
 $ npm test

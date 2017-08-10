@@ -1,5 +1,5 @@
 node_modules
 vendor
 .behat.yml
-_out
+_out/*
 !_out/.gitkeep
