@@ -52,3 +52,11 @@ Feature: I login as the specfic role
 ```
 
 And also, you can see the screenshot in the `_out` directory.
+
+## Add your own tests
+
+`*.feature` in the `features/` directory are tests files, so you can add `*.feature` to this directory.
+
+Additional examples are in the following.
+
+https://github.com/vccw-team/wordpress-mink-extension/tree/master/features
