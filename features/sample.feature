@@ -1,9 +1,10 @@
-Feature: I login as the specfic role
+Feature: Example Features
 
   Scenario: Login as the "administrator" role
 
     When I login as the "administrator" role
-    Then I should see "Welcome to the VCCW"
+    And I am on "/wp-admin/"
+    Then I should see "Dashboard"
 
   Scenario: Take a screenshot
 
