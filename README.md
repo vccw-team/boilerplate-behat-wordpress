@@ -2,7 +2,9 @@
 
 ## How to try
 
-You have to start VCCW before following steps.
+If you have a [VCCW](http://vccw.cc/) based environment it is easy to try.
+
+But if you don't have it, please see [customizing](#customizing) section.
 
 Then `git clone` this repository and install dependencies.
 
@@ -53,9 +55,47 @@ Feature: I login as the specfic role
 
 And also, you can see the screenshot in the `_out` directory.
 
-## Add your own tests
+## Customizing
 
-`*.feature` in the `features/` directory are tests files, so you can add `*.feature` to this directory.
+### Create a configuration
+
+Please copy and edit the `behat.yml.dist` to `behat.yml` like following.
+
+#### Update the user account information
+
+Please update the user name and password for administrator.
+
+https://github.com/vccw-team/boilerplate-behat-wordpress/blob/master/behat.yml.dist#L14-L15
+
+If you want to add additional user please add like following.
+
+```
+extensions:
+  VCCW\Behat\Mink\WordPressExtension:
+    roles:
+      administrator:
+        username: admin
+        password: admin
+      me:
+        username: me
+        password: 1111
+```
+
+You can use `me` like following in the `*.feature`.
+
+```
+Given I login as the "me" role
+```
+
+#### Update the URL to run test
+
+You can set the URL in the `base_url` section.
+
+https://github.com/vccw-team/boilerplate-behat-wordpress/blob/master/behat.yml.dist#L17
+
+### Add your own tests
+
+`*.feature` files in the `features/` directory are files which are recipe for the tests, so you can add `*.feature` to this directory.
 
 Additional examples are in the following.
 
