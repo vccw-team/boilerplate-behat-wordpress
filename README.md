@@ -100,3 +100,7 @@ https://github.com/vccw-team/boilerplate-behat-wordpress/blob/master/behat.yml.d
 Additional examples are in the following.
 
 https://github.com/vccw-team/wordpress-mink-extension/tree/master/features
+
+## License
+
+MIT
