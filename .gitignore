@@ -3,3 +3,4 @@ vendor
 .behat.yml
 _out/*
 !_out/.gitkeep
+composer.lock
