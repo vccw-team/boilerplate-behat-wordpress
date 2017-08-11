@@ -1,5 +1,10 @@
 # A boilerplate for Testing WordPress with Behat
 
+## Requires
+
+* PHP 5.6 or later
+* Composer 1.2 or later
+
 ## How to try
 
 If you have a [VCCW](http://vccw.cc/) based environment, it is easy to try.
